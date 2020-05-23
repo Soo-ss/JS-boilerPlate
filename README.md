@@ -13,10 +13,14 @@
 
 ## Deploy to Heroku
 
-To be continued...
+[heroku](https://www.heroku.com) 사이트로 가서 로그인해서 앱 생성후 Deploy 탭으로 간다.
+<br>
+프로젝트의 루트 디렉토리에서 터미널을 켠 후 Deploy 탭에 적혀있는 절차를 따른다.
 
 ## Deploy to Amazon EC2
 
 To be continued...
 
-<blockquote>주의사항: 배포할때 client폴더의 .gitignore 확인하기 (build)</blockquote>
+`주의사항: 배포할때 client폴더의 .gitignore 확인하기 (build)`
+
+<blockquote>Thanks to John Ahn</blockquote>
