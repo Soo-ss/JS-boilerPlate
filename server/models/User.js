@@ -83,6 +83,8 @@ userSchema.methods.generateToken = function (cb) {
   let user = this;
 
   // jsonwebtoken을 이용해서 token을 생성하기
+  // MongoDB에서 생성된 id(user._id)는 String이 아니므로 MongoDB의 toHexString()메서드를
+  // 사용하여 다음과 같이 형변환을 해주어야 한다.
   let token = jwt.sign(user._id.toHexString(), "secretToken");
 
   // user._id + 'secretToken' => token이 되고
